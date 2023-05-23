@@ -4,7 +4,8 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <h1 className="text-center">Power Equipment Renting System</h1>
+        <br></br>
+        <h1 className="text-center">Process Simplification Suggestion System</h1>
       </div>
     );
   }
