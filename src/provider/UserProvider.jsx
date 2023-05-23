@@ -37,15 +37,31 @@ export const UserProvider = ({ children }) => {
     setUsers(users.filter((user) => user.id !== id))
   }
 
-  let updateUser = (id,name,address,telnumber,equipment) => {
+  let updateUser = (
+    id,
+    name,
+    address,
+    telnumber,
+    equipment,
+    priority,
+    manager
+  ) => {
     const affectedUser = users.map((user) => {
-        if(user.id === id){
-            return {...user,name:name,address:address,telnumber:telnumber,equipment:equipment}
-        }
-        return user
-    })
-    setUsers(affectedUser)
-  }
+      if (user.id === id) {
+        return {
+          ...user,
+          name: name,
+          address: address,
+          telnumber: telnumber,
+          equipment: equipment,
+          priority: priority,
+          manager: manager,
+        };
+      }
+      return user;
+    });
+    setUsers(affectedUser);
+  };
 
   return <UserContext.Provider value={{users,addUser,updateUser,deleteUser}}>
     {children}</UserContext.Provider>;

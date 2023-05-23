@@ -74,7 +74,7 @@ function Users() {
   let handleUpdate = (e) => {
     e.preventDefault()
 
-    updateUser(currentId,currentName,currentAddress,currentTelNumber,currentEquipment)
+    updateUser(currentId,currentName,currentAddress,currentTelNumber,currentEquipment, currentPriority, currentManager)
     setCurrentId(null)
     setCurrentAddress(null)
     setCurrentName(null)
@@ -112,7 +112,7 @@ function Users() {
               type="text"
               onChange={(e) => setCurrentName(e.target.value)}
               ref={nameRef}
-              placeholder="Enter name"
+              placeholder="Enter Department"
               required
             />
 
@@ -121,7 +121,7 @@ function Users() {
               type="number"
               onChange={(e) => setCurrentAddress(e.target.value)}
               ref={addressRef}
-              placeholder="Enter address"
+              placeholder="Enter Number of Process"
               required
             />
 
@@ -130,7 +130,7 @@ function Users() {
               type="text"
               onChange={(e) => setCurrentTelNumber(e.target.value)}
               ref={telnumberRef}
-              placeholder="Enter Tel Number"
+              placeholder="Enter Specific Process"
               required
             />
 
@@ -139,7 +139,7 @@ function Users() {
               type="date"
               onChange={(e) => setCurrentEquipment(e.target.value)}
               ref={equipmentRef}
-              placeholder="Enter equipment"
+              placeholder="Enter ETA"
               required
             />
 
@@ -147,10 +147,11 @@ function Users() {
             <Form.Control
               as="select"
               onChange={(e) => setPriority(e.target.value)}
+              ref={priorityRef}
               placeholder="Enter priority"
               required
             >
-              <option value="">Select priority</option>
+              <option value="">Select Priority</option>
               <option value="low">Low</option>
               <option value="medium">Medium</option>
               <option value="high">High</option>
@@ -160,9 +161,10 @@ function Users() {
             <Form.Control
               as="select"
               onChange={(e) => setManager(e.target.value)}
+              ref={managerRef}
               required
             >
-              <option value="">Select manager</option>
+              <option value="">Select Manager</option>
               <option value="John Doe">John Doe</option>
               <option value="Jane Smith">Jane Smith</option>
               <option value="Michael Johnson">Michael Johnson</option>
@@ -179,7 +181,7 @@ function Users() {
               type="text"
               onChange={(e) => setName(e.target.value)}
               ref={nameRef}
-              placeholder="Enter name"
+              placeholder="Enter Department"
               required
             />
 
@@ -188,7 +190,7 @@ function Users() {
               type="Number"
               onChange={(e) => setAddress(e.target.value)}
               ref={addressRef}
-              placeholder="Enter address"
+              placeholder="Enter Number of Process"
               required
             />
 
@@ -197,7 +199,7 @@ function Users() {
               type="text"
               onChange={(e) => setTelNumber(e.target.value)}
               ref={telnumberRef}
-              placeholder="Enter Tel Number"
+              placeholder="Enter Specific Process"
               required
             />
 
@@ -206,7 +208,7 @@ function Users() {
               type="date"
               onChange={(e) => setEquipment(e.target.value)}
               ref={equipmentRef}
-              placeholder="Enter Equipment"
+              placeholder="Enter ETA"
               required
             />
 
@@ -214,10 +216,11 @@ function Users() {
             <Form.Control
               as="select"
               onChange={(e) => setPriority(e.target.value)}
+              ref={priorityRef}
               placeholder="Enter priority"
               required
             >
-              <option value="">Select priority</option>
+              <option value="">Select Priority</option>
               <option value="low">Low</option>
               <option value="medium">Medium</option>
               <option value="high">High</option>
@@ -227,9 +230,10 @@ function Users() {
             <Form.Control
               as="select"
               onChange={(e) => setManager(e.target.value)}
+              ref={managerRef}
               required
             >
-              <option value="">Select manager</option>
+              <option value="">Select Manager</option>
               <option value="John Doe">John Doe</option>
               <option value="Jane Smith">Jane Smith</option>
               <option value="Michael Johnson">Michael Johnson</option>
