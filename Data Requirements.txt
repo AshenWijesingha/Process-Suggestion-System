@@ -1,0 +1,13 @@
+Power Equipment
+
+Name
+Description
+Rental Price
+Availability
+
+Customer
+
+Name
+Address
+Phone Number
+Rental Equipment
