@@ -9,24 +9,6 @@ export const UserProvider = ({ children }) => {
     //   TelNumber: "0784464128",
     //   Equipment: Drill,
     // },
-    // {
-    //   name: "Ashen Wijesingha 2",
-    //   Address: Gampaha,
-    //   TelNumber: "0784464128",
-    //   Equipment: Drill,
-    // },
-    // {
-    //   name: "Ashen Wijesingha 3",
-    //   Address: Gampaha,
-    //   TelNumber: "0784464128",
-    //   Equipment: Drill,
-    // },
-    // {
-    //   name: "Ashen Wijesingha 4",
-    //   Address: Gampaha,
-    //   TelNumber: "0784464128",
-    //   Equipment: Drill,
-    // },
   ]);
 
   let addUser = (user) => {
